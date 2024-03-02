@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    margin: 150px 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    
+}
+
+.card{
+    padding: 40px;
+    padding-right: 65px;
+}
+
+.card-1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 20px 0 0 20px;
+}
+
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 20px 20px 0;
+}
+
+.icon{
+    margin-bottom: 40px;
+}
+
+.titles{
+    margin-bottom: 40px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.description{
+    margin-bottom: 80px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.btn{
+    margin-bottom: 10px;
+    background-color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(242, 242, 242, 0);
+    color: white;
+}
+
+.btn-1{
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-2{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-3{
+    color: hsl(179, 100%, 13%);
+}
+
+
+@media screen and (max-width: 1441px){
+    .container{
+        width: 70%;
+    }
+
+    .card{
+        padding: 30px;
+        padding-right: 55px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .container{
+        width: 75%;
+    }
+
+    .card{
+        padding: 30px;
+        padding-right: 35px;
+    }
+
+    .description{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .container{
+        width: 45%;
+        grid-template-columns: 1fr;
+    }
+
+    .card{
+        padding: 30px;
+        padding-right: 40px;
+    }
+
+    .description{
+        margin-bottom: 50px;
+    }
+
+    .card-1{
+        border-radius: 20px 20px 0 0;
+    }
+
+    .card-3{
+        border-radius: 0 0 20px 20px;
+    }
+}
+
+@media screen and (max-width: 601px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 401px){
+    .container{
+        width: 90%;
+    }
+    
+
+    .card{
+        padding-right: 70px;
+    }
+
+    
+}

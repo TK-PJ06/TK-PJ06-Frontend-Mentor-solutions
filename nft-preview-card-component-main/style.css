@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  font-size: 18px;
+}
+
+.container {
+  max-width: 325px;
+  margin: 100px auto;
+  padding: 20px 25px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 5%;
+  box-shadow: 0px 0px 32px hsl(217, 60%, 7%);
+}
+
+.cube {
+  width: 100%;
+  height: 275px;
+  border-radius: 5%;
+  margin-bottom: 20px;
+  position: relative;
+  background-size: cover;
+  background-image: url(images/image-equilibrium.jpg);
+}
+
+.eyes {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+
+  /*THE HOVER EFFECT CAN BE DONE BOTH BY USING Z-INDEX AND OPACITY*/
+  /*opacity: 0%;*/
+  z-index: -2;
+}
+
+.title {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-weight: 300;
+  font-size: 17px;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 25px;
+  margin-bottom: 18px;
+}
+
+.eth,
+.clock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eth_p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.clock_p {
+  font-size: 15px;
+  margin-left: 8px;
+}
+
+.author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.author_img {
+  width: 12%;
+  border: 2px solid white;
+  border-radius: 100%;
+}
+.author_p {
+  font-size: 15px;
+  margin-left: 15px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.name {
+  color: white;
+  margin-left: 3px;
+}
+
+.title:hover,
+.name:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.cube:hover {
+  background-image: linear-gradient(
+      rgb(0, 255, 247, 0.3),
+      rgb(0, 255, 247, 0.3)
+    ),
+    url(images/image-equilibrium.jpg);
+  cursor: pointer;
+}
+
+.cube:hover svg {
+  /*THE HOVER EFFECT CAN BE DONE BOTH BY USING Z-INDEX AND OPACITY*/
+  /*opacity: 100%;*/
+  z-index: 10;
+}

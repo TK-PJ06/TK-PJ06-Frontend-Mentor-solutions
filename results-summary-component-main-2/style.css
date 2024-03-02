@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  place-content: center;
+}
+
+.container {
+  margin-top: 150px;
+  width: 35%;
+  border: none;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  box-shadow: 15px 10px 20px hsla(224, 30%, 27%, 0.15);
+}
+
+.resultDiv {
+  border: none;
+  border-radius: 20px;
+  padding: 40px;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  text-align: center;
+}
+
+.summaryDiv {
+  padding: 40px;
+  font-weight: 500;
+}
+
+/**************** RESULT ***********/
+
+.result {
+  margin-bottom: 30px;
+  font-size: 23px;
+  font-weight: 500;
+  color: hsla(222, 100%, 96%, 0.748);
+}
+
+.scoreCircle {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 30px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.score {
+  margin-top: 20px;
+  font-size: 60px;
+  font-weight: 800;
+  color: white;
+}
+
+.total {
+  color: hsla(241, 100%, 89%, 0.49);
+}
+
+.great {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+}
+
+.normalTxt {
+  font-size: 17px;
+  color: hsla(222, 100%, 96%, 0.659);
+}
+
+/**************** SUMMARY ***********/
+
+.summary {
+  margin-bottom: 25px;
+  font-size: 23px;
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.summarySectors {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.svgDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.scoreOutOf {
+  font-weight: 700;
+  color: hsl(224, 30%, 27%);
+}
+
+.undred {
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.703);
+}
+
+.reactionDiv {
+  margin-bottom: 13px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsla(0, 100%, 67%, 0.05);
+  color: hsl(0, 100%, 67%);
+}
+
+.memoryDiv {
+  margin-bottom: 13px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(39, 100%, 56%, 0.05);
+  color: hsl(39, 100%, 56%);
+}
+
+.verbalDiv {
+  margin-bottom: 13px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(166, 100%, 37%, 0.05);
+  color: hsl(166, 100%, 37%);
+}
+
+.visualDiv {
+  margin-bottom: 30px;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(234, 85%, 45%, 0.05);
+  color: hsl(234, 85%, 45%);
+}
+
+.button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-weight: 500;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media screen and (max-width: 1531px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1331px) {
+  .container {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    width: 55%;
+  }
+  .resultDiv {
+    padding: 30px;
+  }
+
+  .summaryDiv {
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 60%;
+  }
+  .resultDiv {
+    padding: 20px;
+  }
+
+  .summaryDiv {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin-top: 100px;
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .container {
+    width: 90%;
+  }
+
+  *,
+  .normalTxt {
+    font-size: 16px;
+  }
+
+  .summary,
+  .result {
+    font-size: 20px;
+  }
+
+  .score {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .container {
+    width: 100%;
+    margin-top: 0px;
+    grid-template-columns: 1fr;
+  }
+
+  .resultDiv {
+    padding: 20px 50px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .summaryDiv {
+    padding: 20px 40px;
+  }
+
+  *,
+  .normalTxt {
+    font-size: 17px;
+  }
+
+  .summary,
+  .result {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .great {
+    font-size: 25px;
+  }
+
+  .score {
+    font-size: 60px;
+  }
+
+  .visualDiv {
+    margin-bottom: 20px;
+  }
+}

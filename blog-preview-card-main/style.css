@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+}
+
+.container{
+    margin: 150px 50%;
+    transform: translateX(-50%);
+    width: 20%;
+    padding: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0 black;
+}
+
+.article-img{
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.type{
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 800;
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px 10px;
+}
+
+.date{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.content{
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: hsl(0, 0%, 50%);
+}
+
+
+.author-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-img{
+    width: 35px;
+    border-radius: 50%;
+}
+
+.author-name{
+    font-weight: 800;
+}
+
+h1:hover{
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+    .container{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container{
+        width: 60%;
+    }
+}
+        
+@media screen and (max-width: 400px) {
+    .container{
+        width: 90%;
+    }
+
+    h1{
+        font-size: 21px;
+    }
+
+    .content{
+        font-size: 14px;
+    }
+}
+        

@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  color: white;
+  font-size: 14px;
+}
+
+body {
+  display: flex;
+  place-content: center;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.container {
+  width: 350px;
+  margin-top: 20vh;
+  padding: 25px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  row-gap: 15px;
+  background-color: hsl(0, 0%, 12%);
+  font-weight: 600;
+}
+
+.profileImg {
+  border-radius: 100%;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-size: 22px;
+}
+
+.location {
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.description {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.links {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 20%);
+  text-align: center;
+}
+
+.links:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}

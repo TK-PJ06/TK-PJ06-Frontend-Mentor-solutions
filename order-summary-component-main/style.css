@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(225, 100%, 94%);
+}
+.container {
+  margin-top: 10rem;
+  width: 28.1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+  display: grid;
+  box-shadow: 0 0.8rem 2.3rem rgba(115, 128, 165, 0.747);
+}
+
+.content {
+  padding: 1rem 2.8rem;
+  text-align: center;
+}
+
+.primary-heading {
+  margin: 0;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+  margin-bottom: 1.4rem;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 1.4rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.pricing-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(225, 100%, 98%);
+  padding: 1.5rem 1rem;
+  border-radius: 0.7rem;
+  margin-bottom: 1.4rem;
+}
+
+.pricing {
+  display: flex;
+  gap: 1rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.plan-name {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+  margin: 0;
+}
+.price {
+  color: hsl(224, 23%, 55%);
+  margin: 0;
+}
+.link {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+}
+.btn {
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  margin-bottom: 1.4rem;
+  box-shadow: 0 0.8rem 0.8rem rgba(115, 128, 165, 0.5);
+}
+.cancel {
+  margin: 0;
+  margin-bottom: 1.4rem;
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+}
+
+.btn:hover {
+  background-color: hsla(263, 78%, 55%, 0.733);
+  cursor: pointer;
+}
+
+.link:hover {
+  color: hsla(263, 78%, 55%, 0.733);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+}

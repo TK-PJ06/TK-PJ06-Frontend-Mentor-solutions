@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  --montserrat: "Montserrat", sans-serif;
+  --fraunces: "Fraunces", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--montserrat);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+body {
+  display: flex;
+  place-content: center;
+  background-color: var(--Cream);
+}
+
+.container {
+  margin-top: 15rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: white;
+}
+
+.img-container {
+  background-image: url(images/image-product-desktop.jpg);
+  background-size: cover;
+}
+
+main {
+  padding: 3rem 3.5rem;
+}
+
+.product-type {
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  color: var(--Dark-grayish-blue);
+  letter-spacing: 0.3rem;
+}
+
+.product-name {
+  margin-bottom: 2rem;
+  font-family: var(--fraunces);
+  font-size: 3.5rem;
+  line-height: 1;
+}
+
+.description {
+  margin-bottom: 2rem;
+  color: var(--Dark-grayish-blue);
+  line-height: 1.5;
+}
+
+.price-div {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: var(--fraunces);
+  color: var(--Dark-cyan);
+  font-size: 3.5rem;
+}
+
+.discounted-price {
+  text-decoration: line-through;
+  color: var(--Dark-grayish-blue);
+}
+
+.buy-btn {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  place-content: center;
+  gap: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--Dark-cyan);
+}
+
+.btn-txt {
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .container {
+    margin-top: 5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  .img-container {
+    background-image: url(images/image-product-mobile.jpg);
+  }
+}
